@@ -4,6 +4,13 @@ public abstract class Aula{
     private String ubicacion;
     private int capacidad;
 
+    public Aula(String nombre, int numAula, String ubicacion, int capacidad) {
+        this.nombre = nombre;
+        this.numAula = numAula;
+        this.ubicacion = ubicacion;
+        this.capacidad = capacidad;
+    }
+
     public void obtenerDetalles(){
 
     }
