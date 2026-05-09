@@ -509,7 +509,7 @@ public class Main {
             System.out.println("  Formato invalido. Use HH:mm (ej: 09:00)");
         }
     }
-
+   //co
     // Pide hora fin: Enter = automatico, formato invalido = reintento,
     // menor a inicio+50 = reintento
     static String leerHoraFin(Scanner sc, String inicio) {
