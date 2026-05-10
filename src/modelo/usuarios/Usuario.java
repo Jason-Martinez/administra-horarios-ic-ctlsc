@@ -1,6 +1,10 @@
+package modelo.usuarios;
+
+import logica.horario.Semestre;
+
 /**
  * Clase abstracta que representa a un usuario del sistema de administración de horarios.
- * Define los atributos y comportamientos comunes para Estudiante, Profesor y Coordinador.
+ * Define los atributos y comportamientos comunes para modelo.usuarios.Estudiante, modelo.usuarios.Profesor y modelo.usuarios.Coordinador.
  */
 public abstract class Usuario {
     private String nombre;
@@ -39,11 +43,11 @@ public abstract class Usuario {
         if (this.login != null && this.password != null) {
             System.out.println("Bienvenido/a, " + this.nombre);
             if (this instanceof Profesor) {
-                System.out.println("Ingreso como: Profesor");
+                System.out.println("Ingreso como: modelo.usuarios.Profesor");
             } else if (this instanceof Estudiante) {
-                System.out.println("Ingreso como: Estudiante");
+                System.out.println("Ingreso como: modelo.usuarios.Estudiante");
             } else if (this instanceof Coordinador) {
-                System.out.println("Ingreso como: Coordinador");
+                System.out.println("Ingreso como: modelo.usuarios.Coordinador");
             }
         } else {
             System.out.println("Credenciales incorrectas.");
@@ -58,7 +62,7 @@ public abstract class Usuario {
 
     /**
      * Retorna una cadena que describe el rol del usuario en el sistema.
-     * @return Rol del usuario (ej: "Rol: Estudiante")
+     * @return Rol del usuario (ej: "Rol: modelo.usuarios.Estudiante")
      */
     public abstract String obtenerRol();
 }

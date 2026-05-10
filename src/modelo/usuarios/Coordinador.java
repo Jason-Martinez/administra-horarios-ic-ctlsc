@@ -1,3 +1,11 @@
+package modelo.usuarios;
+
+import logica.horario.Asignacion;
+import logica.horario.GeneradorHorario;
+import logica.horario.Semestre;
+import modelo.academico.Asignatura;
+import modelo.infraestructura.Aula;
+
 import java.util.LinkedList;
 
 /**
@@ -66,15 +74,15 @@ public class Coordinador extends Usuario {
     public void consultarHorario(Semestre semestre) {
         System.out.println("----------- Horario completo -> Semestre: " + semestre.getNumero() + " -----------\n");
         for (Asignacion asig : semestre.getAsignaciones()) {
-            System.out.println("Asignatura: " + asig.getCurso().getNombre());
+            System.out.println("modelo.academico.Asignatura: " + asig.getCurso().getNombre());
             System.out.println("Tipo: " + asig.getCurso().obtenerTipo());
             asig.getAula().obtenerDetalles();
-            System.out.println("Profesor: " + asig.getProfesor().getNombre());
+            System.out.println("modelo.usuarios.Profesor: " + asig.getProfesor().getNombre());
             System.out.println("Bloque: " + asig.getTiempo());
             System.out.println("------------------------------------------------------------------------------------");
         }
     }
 
     @Override
-    public String obtenerRol() { return "Rol: Coordinador"; }
+    public String obtenerRol() { return "Rol: modelo.usuarios.Coordinador"; }
 }

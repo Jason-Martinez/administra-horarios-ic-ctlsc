@@ -1,3 +1,5 @@
+package logica.tiempo;
+
 /**
  * Representa un bloque de tiempo en un día específico de la semana.
  * Es usado por los profesores para registrar disponibilidad y por el

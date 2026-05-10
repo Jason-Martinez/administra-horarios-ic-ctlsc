@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/administra-horarios-ic-ctlsc.iml" filepath="$PROJECT_DIR$/.idea/administra-horarios-ic-ctlsc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/I proyecto.iml" filepath="$PROJECT_DIR$/I proyecto.iml" />
     </modules>
   </component>
 </project>

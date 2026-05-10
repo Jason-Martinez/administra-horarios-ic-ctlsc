@@ -1,5 +1,7 @@
+package modelo.academico;
+
 /**
- * Asignatura de tipo teórico. Complementa los datos base con un sitio web de apuntes.
+ * modelo.academico.Asignatura de tipo teórico. Complementa los datos base con un sitio web de apuntes.
  */
 public class AsignaturaTeorica extends Asignatura {
     private String sitioWebApuntes;
@@ -21,7 +23,7 @@ public class AsignaturaTeorica extends Asignatura {
 
     @Override
     public void obtenerDetalles() {
-        System.out.println("Asignatura Teórica: " + getNombre());
+        System.out.println("modelo.academico.Asignatura Teórica: " + getNombre());
         System.out.println("  Créditos: " + getCreditos() + " (" + getHorasSemanales() + " hrs/semana)");
         System.out.println("  Exclusiva carrera: " + isExclusivaCarrera());
         System.out.println("  Sitio de apuntes: " + sitioWebApuntes);

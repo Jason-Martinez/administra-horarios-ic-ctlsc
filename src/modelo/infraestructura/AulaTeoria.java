@@ -1,5 +1,10 @@
+package modelo.infraestructura;
+
+import modelo.academico.Asignatura;
+import modelo.academico.AsignaturaTeorica;
+
 /**
- * Aula destinada a clases teóricas. Puede contar con aire acondicionado y equipo multimedia.
+ * modelo.infraestructura.Aula destinada a clases teóricas. Puede contar con aire acondicionado y equipo multimedia.
  */
 public class AulaTeoria extends Aula {
     private boolean tieneAireAcondicionado;
@@ -28,7 +33,7 @@ public class AulaTeoria extends Aula {
 
     @Override
     public void obtenerDetalles() {
-        System.out.println("Aula de Teoría: " + getNombre() + " (#" + getNumAula() + ")");
+        System.out.println("modelo.infraestructura.Aula de Teoría: " + getNombre() + " (#" + getNumAula() + ")");
         System.out.println("  Ubicación: " + getUbicacion() + " | Capacidad: " + getCapacidad());
         System.out.println("  Aire acondicionado: " + tieneAireAcondicionado);
         System.out.println("  Equipo multimedia: " + tieneEquipoMultimedia);

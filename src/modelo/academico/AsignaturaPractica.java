@@ -1,7 +1,9 @@
+package modelo.academico;
+
 import java.util.LinkedList;
 
 /**
- * Asignatura de tipo práctico. Requiere materiales de apoyo y un sistema operativo específico.
+ * modelo.academico.Asignatura de tipo práctico. Requiere materiales de apoyo y un sistema operativo específico.
  */
 public class AsignaturaPractica extends Asignatura {
     private LinkedList<String> materialApoyo;
@@ -34,7 +36,7 @@ public class AsignaturaPractica extends Asignatura {
 
     @Override
     public void obtenerDetalles() {
-        System.out.println("Asignatura Práctica: " + getNombre());
+        System.out.println("modelo.academico.Asignatura Práctica: " + getNombre());
         System.out.println("  Créditos: " + getCreditos() + " (" + getHorasSemanales() + " hrs/semana)");
         System.out.println("  Exclusiva carrera: " + isExclusivaCarrera());
         System.out.println("  Sistema Operativo: " + sistemaOperativo);

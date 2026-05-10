@@ -1,3 +1,11 @@
+package modelo.usuarios;
+
+import logica.horario.Asignacion;
+import logica.horario.Semestre;
+import logica.tiempo.BloqueTiempo;
+import modelo.academico.Asignatura;
+import modelo.academico.Departamento;
+
 import java.util.LinkedList;
 
 /**
@@ -16,7 +24,7 @@ public class Profesor extends Usuario {
      * @param cedula       Cédula de identidad
      * @param login        Identificador de acceso (formato: profesor_cedula)
      * @param password     Contraseña de acceso
-     * @param departamento Departamento académico al que pertenece
+     * @param departamento modelo.academico.Departamento académico al que pertenece
      */
     public Profesor(String nombre, String cedula, String login, String password, Departamento departamento) {
         super(nombre, cedula, login, password);
@@ -33,7 +41,7 @@ public class Profesor extends Usuario {
 
     /**
      * Agrega una asignatura a la lista de cursos que imparte este profesor.
-     * @param cursoImpartido Asignatura que el profesor imparte
+     * @param cursoImpartido modelo.academico.Asignatura que el profesor imparte
      */
     public void setCursoImpartido(Asignatura cursoImpartido) { this.cursoImpartido.add(cursoImpartido); }
 
@@ -59,8 +67,8 @@ public class Profesor extends Usuario {
         System.out.println("----------- Horario profesor: " + this.getNombre() + " -----------\n");
         for (Asignacion asig : semestre.getAsignaciones()) {
             if (asig.getProfesor() == this) {
-                System.out.println("Asignatura: " + asig.getCurso().getNombre());
-                System.out.println("Aula: " + asig.getAula().getNombre());
+                System.out.println("modelo.academico.Asignatura: " + asig.getCurso().getNombre());
+                System.out.println("modelo.infraestructura.Aula: " + asig.getAula().getNombre());
                 System.out.println("Bloque: " + asig.getTiempo());
                 System.out.println("------------------------------------------------------------------------------------");
             }
@@ -68,5 +76,5 @@ public class Profesor extends Usuario {
     }
 
     @Override
-    public String obtenerRol() { return "Rol: Profesor"; }
+    public String obtenerRol() { return "Rol: modelo.usuarios.Profesor"; }
 }

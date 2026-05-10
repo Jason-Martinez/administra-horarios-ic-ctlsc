@@ -1,3 +1,5 @@
+package modelo.academico;
+
 /**
  * Clase abstracta que representa una asignatura del plan de estudios.
  * Puede ser de tipo Teórica o Práctica según su subclase.

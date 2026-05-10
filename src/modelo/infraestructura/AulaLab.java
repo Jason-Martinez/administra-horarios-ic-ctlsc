@@ -1,5 +1,10 @@
+package modelo.infraestructura;
+
+import modelo.academico.Asignatura;
+import modelo.academico.AsignaturaPractica;
+
 /**
- * Aula de laboratorio destinada a clases prácticas.
+ * modelo.infraestructura.Aula de laboratorio destinada a clases prácticas.
  * Cuenta con equipo técnico especializado para los estudiantes.
  */
 public class AulaLab extends Aula {
@@ -29,7 +34,7 @@ public class AulaLab extends Aula {
 
     @Override
     public void obtenerDetalles() {
-        System.out.println("Aula de Laboratorio: " + getNombre() + " (#" + getNumAula() + ")");
+        System.out.println("modelo.infraestructura.Aula de Laboratorio: " + getNombre() + " (#" + getNumAula() + ")");
         System.out.println("  Ubicación: " + getUbicacion() + " | Capacidad: " + getCapacidad());
         System.out.println("  Equipo técnico: " + equipoTecnico + " (x" + cantidadEquipo + ")");
     }

@@ -1,3 +1,5 @@
+package modelo.academico;
+
 /**
  * Representa el departamento académico al que pertenece un profesor.
  */

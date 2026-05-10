@@ -1,6 +1,10 @@
+package modelo.infraestructura;
+
+import modelo.academico.Asignatura;
+
 /**
  * Clase abstracta que representa un aula del sistema.
- * Puede ser un aula de teoría (AulaTeoria) o un laboratorio (AulaLab).
+ * Puede ser un aula de teoría (modelo.infraestructura.AulaTeoria) o un laboratorio (modelo.infraestructura.AulaLab).
  */
 public abstract class Aula {
     private String nombre;
@@ -44,8 +48,8 @@ public abstract class Aula {
 
     /**
      * Determina si esta aula es compatible con el tipo de asignatura recibida.
-     * AulaTeoria acepta AsignaturaTeorica y AulaLab acepta AsignaturaPractica.
-     * @param asignatura Asignatura que se desea impartir en el aula
+     * modelo.infraestructura.AulaTeoria acepta modelo.academico.AsignaturaTeorica y modelo.infraestructura.AulaLab acepta modelo.academico.AsignaturaPractica.
+     * @param asignatura modelo.academico.Asignatura que se desea impartir en el aula
      * @return true si el aula es apropiada para esa asignatura
      */
     public abstract boolean esApropiada(Asignatura asignatura);

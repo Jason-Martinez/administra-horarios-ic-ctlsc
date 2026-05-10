@@ -1,8 +1,10 @@
+package logica.horario;
+
 import java.util.LinkedList;
 
 /**
  * Representa un semestre académico con su lista de asignaciones generadas.
- * Las asignaciones son pobladas por el GeneradorHorario a través del Coordinador.
+ * Las asignaciones son pobladas por el GeneradorHorario a través del modelo.usuarios.Coordinador.
  */
 public class Semestre {
     private int numero;

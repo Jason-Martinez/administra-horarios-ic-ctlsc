@@ -1,3 +1,10 @@
+package logica.horario;
+
+import logica.tiempo.BloqueTiempo;
+import modelo.academico.Asignatura;
+import modelo.infraestructura.Aula;
+import modelo.usuarios.Profesor;
+
 /**
  * Representa la asignación de una asignatura a un aula, profesor y bloque de tiempo.
  * Es la unidad central del horario generado y la que el GeneradorHorario construye.
@@ -12,9 +19,9 @@ public class Asignacion {
      * Crea una asignación con todos sus componentes definidos.
      * El aula puede ser null inicialmente y asignarse luego por el GeneradorHorario.
      * @param tiempo   Bloque de tiempo en que se imparte la asignatura
-     * @param aula     Aula donde se impartirá (puede ser null al momento de crear)
-     * @param profesor Profesor que imparte la asignatura
-     * @param curso    Asignatura asignada
+     * @param aula     modelo.infraestructura.Aula donde se impartirá (puede ser null al momento de crear)
+     * @param profesor modelo.usuarios.Profesor que imparte la asignatura
+     * @param curso    modelo.academico.Asignatura asignada
      */
     public Asignacion(BloqueTiempo tiempo, Aula aula, Profesor profesor, Asignatura curso) {
         this.tiempo = tiempo;

@@ -1,9 +1,16 @@
+package logica.horario;
+
+import logica.tiempo.BloqueTiempo;
+import modelo.academico.Asignatura;
+import modelo.infraestructura.Aula;
+import modelo.usuarios.Profesor;
+
 import java.util.LinkedList;
 
 /**
  * Genera automáticamente los horarios de un semestre asignando aulas y bloques de tiempo
  * a cada asignatura según la disponibilidad de los profesores, sin producir choques.
- * Es invocado por el Coordinador a través de generarHorario().
+ * Es invocado por el modelo.usuarios.Coordinador a través de generarHorario().
  */
 public class GeneradorHorario {
     private LinkedList<Asignacion> asignaciones;

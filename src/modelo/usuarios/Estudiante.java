@@ -1,3 +1,8 @@
+package modelo.usuarios;
+
+import logica.horario.Asignacion;
+import logica.horario.Semestre;
+
 /**
  * Representa a un estudiante del sistema.
  * Su única acción disponible es consultar el horario completo de un semestre.
@@ -23,15 +28,15 @@ public class Estudiante extends Usuario {
     public void consultarHorario(Semestre semestre) {
         System.out.println("----------- Horario semestre: " + semestre.getNumero() + " -----------\n");
         for (Asignacion asig : semestre.getAsignaciones()) {
-            System.out.println("Asignatura: " + asig.getCurso().getNombre());
+            System.out.println("modelo.academico.Asignatura: " + asig.getCurso().getNombre());
             System.out.println("Tipo: " + asig.getCurso().obtenerTipo());
-            System.out.println("Aula: " + asig.getAula().getNombre());
-            System.out.println("Profesor: " + asig.getProfesor().getNombre());
+            System.out.println("modelo.infraestructura.Aula: " + asig.getAula().getNombre());
+            System.out.println("modelo.usuarios.Profesor: " + asig.getProfesor().getNombre());
             System.out.println("Bloque: " + asig.getTiempo());
             System.out.println("------------------------------------------------------------------------------------");
         }
     }
 
     @Override
-    public String obtenerRol() { return "Rol: Estudiante"; }
+    public String obtenerRol() { return "Rol: modelo.usuarios.Estudiante"; }
 }
