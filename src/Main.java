@@ -1,5 +1,19 @@
 import java.util.LinkedList;
 
+import logica.horario.Asignacion;
+import logica.horario.Semestre;
+import logica.tiempo.BloqueTiempo;
+import modelo.academico.Asignatura;
+import modelo.academico.AsignaturaPractica;
+import modelo.academico.AsignaturaTeorica;
+import modelo.academico.Departamento;
+import modelo.infraestructura.Aula;
+import modelo.infraestructura.AulaLab;
+import modelo.infraestructura.AulaTeoria;
+import modelo.usuarios.Coordinador;
+import modelo.usuarios.Estudiante;
+import modelo.usuarios.Profesor;
+
 /**
  * Clase principal del sistema Administra-Horarios IC-CTLSC.
  * Contiene tres escenarios con datos quemados que demuestran la generación
